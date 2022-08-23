@@ -5,7 +5,7 @@ class TextInANest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      titleText: "Hello",
+      titleText: 'Hello',
       bodyText: 'World',
     };
   }
