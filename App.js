@@ -5,8 +5,8 @@ class TextInANest extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      titleText: "Bird's Nest",
-      bodyText: 'This is not really a bird nest.',
+      titleText: "Hello",
+      bodyText: 'World',
     };
   }
 
