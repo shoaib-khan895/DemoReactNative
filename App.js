@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import {Text,View,Button} from 'react-native';
-// import DemoTwo from './Demo';
 
-class App extends Component {
+class Demo extends Component {
   
   constructor() {
     super();
@@ -25,7 +24,6 @@ class App extends Component {
   componentDidUpdate(){
     console.warn("--> componentDidUpdate is called");
   }
-
   render() 
   {
     console.warn("--> render is called");
@@ -33,7 +31,6 @@ class App extends Component {
       <View>
         <Text>Hello World 1</Text>
         <Button title={this.state.data} onPress={()=>{this.setState({data:"You updated me"})}}></Button>
-        {/* <Button title="click" onPress={<DemoTwo/>}></Button> */}
       </View>
     );
   }
@@ -41,4 +38,4 @@ class App extends Component {
 
 
 
-export default App;
+export default Demo;
