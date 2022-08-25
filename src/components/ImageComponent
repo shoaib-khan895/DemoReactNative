@@ -1,0 +1,16 @@
+import React, {  } from 'react';
+import { View,Image} from 'react-native';
+
+//@Image component
+const DisplayAnImage = () => {
+  return (
+    <View style={styles.containerbtn}>
+      <Image
+        style={styles.tinyLogo}
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+      />
+    </View>
+  );
+}

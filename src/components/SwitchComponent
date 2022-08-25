@@ -1,0 +1,20 @@
+import React, { Component, useState, setState, state } from 'react';
+import { Text, View,FlatList ,StyleSheet, Image, TextInput, Button, StatusBar, SafeAreaView, ScrollView ,Alert,Switch} from 'react-native';
+
+//@Switch
+const ToggleButtonComponent = () => {
+  const [isEnabled, setIsEnabled] = useState(true);
+  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+
+  return (
+    <View style={styles.containerToggleButtonComponent}>
+      <Switch
+        trackColor={{ false: "#767577", true: "#81b0ff" }}
+        thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+        ios_backgroundColor="#f4f3f4"
+        onValueChange={toggleSwitch}
+        value={isEnabled}
+      />
+    </View>
+  );
+}

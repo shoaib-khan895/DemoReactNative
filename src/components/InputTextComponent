@@ -1,0 +1,18 @@
+import React, { Component, useState, setState, state } from 'react';
+import { Text, View,FlatList ,StyleSheet, Image, TextInput, Button, StatusBar, SafeAreaView, ScrollView ,Alert,Switch} from 'react-native';
+
+//@Input Text component
+const UselessTextInput = () => {
+  const [number, onChangeNumber] = React.useState(null);
+
+  return (
+    <>
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeNumber}
+        value={number}
+        placeholder="useless placeholder"
+        keyboardType="numeric" />
+    </>
+  );
+};
