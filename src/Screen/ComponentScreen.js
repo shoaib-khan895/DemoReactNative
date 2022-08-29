@@ -1,7 +1,7 @@
 import React, { Component, useState, setState, state } from 'react';
 import { Text, View,FlatList ,StyleSheet, Image, TextInput, Button, StatusBar, SafeAreaView, ScrollView ,Alert,Switch} from 'react-native';
 
-class Demo extends Component {
+class ComponentScreen extends Component {
   render() {
     return (
       <ScrollView>
@@ -201,6 +201,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Demo;
+export default ComponentScreen;
 
 

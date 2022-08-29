@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { View, Text, Button,StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Demo from "./src/Screen/Demo";
+import ComponentScreen from "./src/Screen/ComponentScreen";
 import DetailsScreen from "./src/Screen/DetailsScreen";
 import LifeCycle from "./src/Screen/LifeCycle";
+import Fetch from "./src/Screen/Fetch";
 
 
 const Stack = createNativeStackNavigator();
@@ -35,6 +36,11 @@ function HomeScreen({ navigation }) {
         <Button 
         title={"Click to see LifeCycle in Logs"}
         onPress={()=>navigation.navigate('LifeCycle')}></Button>
+          <Separator></Separator>
+       
+         <Button 
+        title={"Fetch Details"}
+        onPress={()=>navigation.navigate('Fetch')}></Button>
     </View>
   );
 }
@@ -46,8 +52,9 @@ function MainMethod() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
-        <Stack.Screen name="Demo" component={Demo} />
+        <Stack.Screen name="Demo" component={ComponentScreen} />
         <Stack.Screen name="LifeCycle" component={LifeCycle} />
+        <Stack.Screen name="Fetch" component={Fetch} />
 
       </Stack.Navigator>
     </NavigationContainer>
