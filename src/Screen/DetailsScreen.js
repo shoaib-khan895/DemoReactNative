@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Button } from 'react-native';
 
-class DetailsScreen extends Component {
-  render() {
+const DetailsScreen = () =>  {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Details Screen</Text>
@@ -11,7 +10,7 @@ class DetailsScreen extends Component {
         
       </View>
     );
-  }
+  
 
 }
 export default DetailsScreen;
