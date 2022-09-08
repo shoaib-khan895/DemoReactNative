@@ -6,10 +6,8 @@ import ComponentScreen from "./src/Screen/ComponentScreen";
 import DetailsScreen from "./src/Screen/DetailsScreen";
 import LifeCycle from "./src/Screen/LifeCycle";
 import Fetch from "./src/Screen/Fetch";
-import Redux from "./src/redux/components/Redux";
 import Home from "./src/Screen/Home";
-import ReduxNew from "./src/reduxnew/ReduxNew";
-
+import HomeComponent from "./src/redux/src/component/HomeComponent";
 const Stack = createNativeStackNavigator();
 
 function MainMethod() {
@@ -21,8 +19,7 @@ function MainMethod() {
         <Stack.Screen name="Demo" component={ComponentScreen} />
         <Stack.Screen name="LifeCycle" component={LifeCycle} />
         <Stack.Screen name="Fetch" component={Fetch} />
-        <Stack.Screen name="Redux" component={Redux} />
-        <Stack.Screen name="ReduxNew" component={ReduxNew} />
+        <Stack.Screen name="HomeComponent" component={HomeComponent} />
 
       </Stack.Navigator>
     </NavigationContainer>

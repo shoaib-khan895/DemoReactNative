@@ -28,15 +28,13 @@ const Home = function HomeScreen({ navigation })  {
           onPress={()=>navigation.navigate('Fetch')}></Button>
           <Separator></Separator>
          
-         <Button 
-        title={"Redux"}
-        onPress={()=>navigation.navigate('Redux')}></Button>
-        <Separator></Separator>
+      
          
          <Button 
-        title={"ReduxNew"}
-        onPress={()=>navigation.navigate('ReduxNew')}></Button>
+        title={"HomeComponent"}
+        onPress={()=>navigation.navigate('HomeComponent')}></Button>
       </View>
+      
         
     );
   
